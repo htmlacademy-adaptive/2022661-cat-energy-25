@@ -1,20 +1,18 @@
 .main-block {
   display: block;
-  background-image: url(../img/index/index-main-cat.jpeg);
+  background-image: url("../img/index/index-main-cat.jpeg");
   background-size: 320px 302px;
   background-repeat: no-repeat;
-  font-family: 'Oswald';
-  color: #fff;
+  font-family: @main-font;
+  color: @main-color;
   padding-top: 27px;
 }
 
 .main-block__title {
   margin: 0 36px 25px 36px;
   padding: 0;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   text-align: center;
+  .main-titel-style();
 }
 
 .main-block__discription {

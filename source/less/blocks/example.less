@@ -1,5 +1,5 @@
 .example {
-  background-color: #EAEAEA;
+  background-color: @third-color;
 }
 
 .example__wrapper {
@@ -14,13 +14,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: @text-contrast-color;
 }
 
 .example__description {
   margin: 0 0 20px;
   padding: 0;
-  font-family: 'Arial';
+  font-family: @additional-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -36,13 +36,13 @@
   padding: 15px 20px 17px;
   width: 124px;
   height: 56px;
-  border: 1px solid #CDCDCD;
+  border: @catalog-additional-border;
   box-sizing: border-box;
   border-radius: 3px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: @text-contrast-color;
 }
 
 .example__number--loss::before {
@@ -51,13 +51,12 @@
   top: 46px;
   left: 22px;
   width: 82px;
-  font-family: 'Arial';
-  font-style: normal;
+  font-family: @additional-font;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
-  background-color: #EAEAEA;
-  color: #444444;
+  line-height: 1;
+  background-color: @third-color;
+  color: @text-additional-color;
 }
 
 
@@ -67,13 +66,12 @@
   top: 46px;
   left: 22px;
   width: 82px;
-  font-family: 'Arial';
-  font-style: normal;
+  font-family: @additional-font;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
-  background-color: #EAEAEA;
-  color: #444444;
+  line-height: 1;
+  background-color: @third-color;
+  color: @text-additional-color;
 }
 
 .example__expenses {
@@ -84,7 +82,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @text-contrast-color;
 }
 
 .example__image {
@@ -95,4 +93,3 @@
 .example__range-scale {
   padding: 0 35px 40px;
 }
-

@@ -7,16 +7,14 @@
 
 .contacts__title {
   margin: 0;
-  padding: 0 2px 0 0 ;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  padding: 0 2px 0 0;
   text-transform: uppercase;
-  color: #111111;
+  color: @rare-color;
+  .additional-titel-style();
 }
 
 .contacts__address {
-  font-family: 'Arial';
+  font-family: @additional-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -24,5 +22,5 @@
 }
 
 .contacts--modified {
-  background-color: #F2F2F2;
+  background-color: @additional-color;
 }

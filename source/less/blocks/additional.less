@@ -13,7 +13,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: @text-contrast-color;
 }
 
 .additional__list {
@@ -23,18 +23,18 @@
 }
 
 .additional__item {
-  border-bottom: 1px solid #CDCDCD;
+  border-bottom: @catalog-additional-border;
 
   &:first-child {
-    border-top: 1px solid #CDCDCD;
+    border-top: @catalog-additional-border;
   }
 }
 
 .additional__gift {
-  background-image: url(../img/catalog/additional-gift.jpeg);
+  background-image: url("../img/catalog/additional-gift.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #68B738;
+  background-color: @button-main-color;
   height: 290px;
   padding: 186px 61px 42px 58px;
   box-sizing: border-box;
@@ -43,10 +43,8 @@
 .additional__gift-description {
   margin: 0;
   padding: 0;
-  font-family: 'Arial';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: @additional-font;
   text-align: center;
-  color: #FFFFFF;
+  color: @main-color;
+  .additional-titel-style ();
 }

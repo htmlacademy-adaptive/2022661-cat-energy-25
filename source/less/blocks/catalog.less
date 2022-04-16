@@ -2,16 +2,14 @@
 .catalog__titel {
   margin: 0;
   padding: 27px 42px 41px 20px;
-  font-family: 'Oswald';
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
-  border-top: 1px solid #EBEBEB;
-  border-bottom: 1px solid #EBEBEB;
+  font-family: @main-font;
+  color: @text-contrast-color;
+  border-top: @catalog-main-border;
+  border-bottom: @catalog-main-border;
+  .main-titel-style ();
 }
 
-.catalog__list{
+.catalog__list {
   display: grid;
   margin: 0;
   padding: 0;
@@ -19,6 +17,5 @@
 }
 
 .catalog__item {
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: @catalog-main-border;
 }
-

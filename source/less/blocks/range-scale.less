@@ -1,10 +1,8 @@
 .range-scale {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @text-contrast-color;
+  .additional-titel-style ();
 }
 
 .range-scale__description {
@@ -15,10 +13,8 @@
   width: 86px;
   height: 14px;
   margin: 0;
-  -webkit-appearance: none;
-    -moz-appearance: none;
   appearance: none;
-  border: 1px solid #CDCDCD;
+  border: @catalog-additional-border;
   box-sizing: border-box;
   border-radius: 6px;
 }
@@ -26,11 +22,10 @@
 .range-scale__scale::-webkit-slider-runnable-track {
   height: 6px;
   margin: 4px 40px 4px 6px;
-  background: #68B738;
+  background: @button-main-color;
   border-radius: 6px;
 }
 
 .range-scale__scale::-webkit-slider-thumb {
-  -webkit-appearance: none;
   appearance: none;
 }
