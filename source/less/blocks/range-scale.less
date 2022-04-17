@@ -1,0 +1,31 @@
+.range-scale {
+  text-align: center;
+  text-transform: uppercase;
+  color: @text-contrast-color;
+  .additional-titel-style ();
+}
+
+.range-scale__description {
+  padding: 0 13px 0 0;
+}
+
+.range-scale__scale {
+  width: 86px;
+  height: 14px;
+  margin: 0;
+  appearance: none;
+  border: @catalog-additional-border;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.range-scale__scale::-webkit-slider-runnable-track {
+  height: 6px;
+  margin: 4px 40px 4px 6px;
+  background: @button-main-color;
+  border-radius: 6px;
+}
+
+.range-scale__scale::-webkit-slider-thumb {
+  appearance: none;
+}

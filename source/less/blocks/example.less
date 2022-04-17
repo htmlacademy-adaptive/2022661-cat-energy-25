@@ -1,0 +1,95 @@
+.example {
+  background-color: @third-color;
+}
+
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+.example__title {
+  margin: 0 0 40px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @text-contrast-color;
+}
+
+.example__description {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: @additional-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__number {
+  position: relative;
+  padding: 15px 20px 17px;
+  width: 124px;
+  height: 56px;
+  border: @catalog-additional-border;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: @text-contrast-color;
+}
+
+.example__number--loss::before {
+  position: absolute;
+  content: "снижение веса";
+  top: 46px;
+  left: 22px;
+  width: 82px;
+  font-family: @additional-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  background-color: @third-color;
+  color: @text-additional-color;
+}
+
+
+.example__number--time::before {
+  position: absolute;
+  content: "затрачено времени";
+  top: 46px;
+  left: 22px;
+  width: 82px;
+  font-family: @additional-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  background-color: @third-color;
+  color: @text-additional-color;
+}
+
+.example__expenses {
+  margin: 0;
+  padding: 20px 46px 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @text-contrast-color;
+}
+
+.example__image {
+  display: block;
+  margin: 0 0 15px;
+}
+
+.example__range-scale {
+  padding: 0 35px 40px;
+}
