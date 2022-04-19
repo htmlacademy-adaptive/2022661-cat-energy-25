@@ -1,6 +1,6 @@
 .site-list {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -8,6 +8,20 @@
   position: absolute;
   left: -276px;
   top: 0;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    left: -440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 446px;
+    left: -446px;
+  }
 }
 
 .site-list__item {
@@ -17,6 +31,11 @@
   border-top: @nav-border;
   box-sizing: border-box;
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    border-top: none;
+  }
 }
 
 .site-list__link {
@@ -27,4 +46,18 @@
   color: @text-contrast-color;
   text-decoration: none;
   padding: 22px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    font-family: @main-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 42px 0 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 70px 0 10px;
+  }
 }

@@ -2,11 +2,22 @@
   text-align: center;
   text-transform: uppercase;
   color: @text-contrast-color;
-  .additional-titel-style ();
 }
 
 .range-scale__description {
+  text-align: center;
+  text-transform: uppercase;
+  color: @text-contrast-color;
   padding: 0 13px 0 0;
+  .additional-titel-style ();
+
+
+  @media (min-width: @tablet-width) {
+    padding: 4px 10px 6px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .range-scale__scale {
@@ -17,6 +28,10 @@
   border: @catalog-additional-border;
   box-sizing: border-box;
   border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 13px;
+  }
 }
 
 .range-scale__scale::-webkit-slider-runnable-track {
