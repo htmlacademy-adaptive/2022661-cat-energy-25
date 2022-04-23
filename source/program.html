@@ -57,59 +57,65 @@
               программу питания для вашего&nbsp;кота
             </p>
             <form class="program-choose__form form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="form__field">
-                <label class="form__label">ИМЯ:*
-                  <input class="form__input" name="cat_name" type="text" placeholder="барсик" required>
-                </label>
-              </p>
-              <p class="form__field">
-                <label class="form__label">Вес (кг):*
-                  <input class="form__input" name="cat_name" type="number" placeholder="7" min="1" required>
-                </label>
-              </p>
-              <p class="form__field">
-                <label class="form__label">Возраст (лет):
-                  <input class="form__input" name="cat_name" type="number" placeholder="7" min="1">
-                </label>
-              </p>
-              <fieldset class="program-choose__filter-group">
-                <legend class="visually-hidden">Тип программы</legend>
-                <ul class="program-choose__filter-list ">
-                  <li class="program-choose__filter-item">
-                    <label class="program-choose__control control">
-                      <input class="control__input" type="radio" value="loss" name="prorramm_type" checked>
-                      <span class="control__mark"></span>
-                      <span class="control__label">похудение</span>
+              <div class="program-choose__form-main">
+                <ul class="program-choose__form-cat">
+                  <li class="form__field">
+                    <label class="form__label">ИМЯ:*
+                      <input class="form__input" name="cat_name" type="text" placeholder="барсик" required>
                     </label>
                   </li>
-                  <li class="program-choose__filter-item">
-                    <label class="program-choose__control control">
-                      <input class="control__input" type="radio" value="gain" name="prorramm_type">
-                      <span class="control__mark"></span>
-                      <span class="control__label">Набор массы</span>
+                  <li class="form__field">
+                    <label class="form__label">Вес (кг):*
+                      <input class="form__input" name="cat_name" type="number" placeholder="7" min="1" required>
                     </label>
                   </li>
-                  <li class="program-choose__filter-item">
-                    <label class="program-choose__control control">
-                      <input class="control__input" type="radio" value="need_advice" name="prorramm_type">
-                      <span class="control__mark"></span>
-                      <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                  <li class="form__field">
+                    <label class="form__label">Возраст (лет):
+                      <input class="form__input" name="cat_name" type="number" placeholder="7" min="1">
                     </label>
                   </li>
                 </ul>
-              </fieldset>
+                <fieldset class="program-choose__filter-group">
+                  <legend class="visually-hidden">Тип программы</legend>
+                  <ul class="program-choose__filter-list ">
+                    <li class="program-choose__filter-item">
+                      <label class="program-choose__control control">
+                        <input class="control__input" type="radio" value="loss" name="prorramm_type" checked>
+                        <span class="control__mark"></span>
+                        <span class="control__label">похудение</span>
+                      </label>
+                    </li>
+                    <li class="program-choose__filter-item">
+                      <label class="program-choose__control control">
+                        <input class="control__input" type="radio" value="gain" name="prorramm_type">
+                        <span class="control__mark"></span>
+                        <span class="control__label">Набор массы</span>
+                      </label>
+                    </li>
+                    <li class="program-choose__filter-item">
+                      <label class="program-choose__control control">
+                        <input class="control__input" type="radio" value="need_advice" name="prorramm_type">
+                        <span class="control__mark"></span>
+                        <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
               <div class="program-choose__owner-contacts owner-contacts">
                 <h2 class="owner-contacts__titel">Контактные данные (владельца кота)</h2>
-                <p class="form__field">
-                  <label class="form__label">E-mail:*
-                    <input class="form__input form__input--email" name="E-mail" type="email" placeholder="kuklachev@gmail.com" required>
-                  </label>
-                </p>
-                <p class="form__field">
-                  <label class="form__label">Телефон:*
-                    <input class="form__input form__input--phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
-                  </label>
-                </p>
+                <ul class="owner-contacts__form-wrapper">
+                  <li class="owner-contacts__form form__field">
+                    <label class="form__label">E-mail:*
+                      <input class="form__input form__input--email" name="E-mail" type="email" placeholder="kuklachev@gmail.com" required>
+                    </label>
+                  </li>
+                  <li class="owner-contacts__form form__field">
+                    <label class="form__label">Телефон:*
+                      <input class="form__input form__input--phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+                    </label>
+                  </li>
+                </ul>
               </div>
               <div class="program-choose__comment comment">
                 <h2 class="comment__titel">Комментарий</h2>
@@ -154,7 +160,7 @@
                   </ul>
                 </fieldset>
               </div>
-              <button class="program-choose__button button" type="submit">отправить заявку</button>
+              <button class="program-choose__button button button--form" type="submit">отправить заявку</button>
               <span class="program-choose__footnote">* — Обязательные поля</span>
             </form>
           </div>
@@ -171,7 +177,7 @@
                 Санкт-Петербург</address>
             </div>
             <div class="contacts__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.3875829897056!2d30.322748102442937!3d59.938602132292964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648997564893!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.3875829897056!2d30.322748102442937!3d59.938602132292964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648997564893!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </section>
           <section class="main-footer__links">

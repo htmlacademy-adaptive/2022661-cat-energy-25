@@ -1,6 +1,16 @@
 .form__field {
   padding: 0;
   margin: 0 0 13px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 
@@ -13,6 +23,10 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    .form-titel-style-tablet();
+  }
 }
 
 .form__input {
@@ -26,4 +40,9 @@
   text-transform: uppercase;
   border: @form-border;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 18px;
+    .form-titel-style-tablet();
+  }
 }
