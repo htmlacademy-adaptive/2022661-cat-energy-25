@@ -28,10 +28,39 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px 40px;
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+    padding: 10px 35px;
+  }
 }
 
 .button--catalog {
   font-size: 16px;
   line-height: 20px;
   padding: 10px 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}
+
+.button--catalog-tablet {
+  @media (min-width: @tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
+
+.button--form {
+  @media (min-width: @tablet-width) {
+    width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
