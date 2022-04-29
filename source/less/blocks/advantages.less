@@ -44,6 +44,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: advantages;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -62,17 +63,58 @@
 }
 
 .advantages__item {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: 0;
   margin: 0;
+  z-index: 1;
+  counter-increment: advantages;
 
   @media (min-width: @tablet-width) {
     padding: 150px 30px 56px 0;
     width: 250px;
     box-sizing: border-box;
+    background-size: 80px 80px;
+    background-position: 0 32px;
+
+    &::after {
+      position: absolute;
+      top: -10px;
+      left: 112px;
+      font-family: @main-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: @additional-color;
+      width: 112px;
+      height: 280px;
+      z-index: -1;
+      content: counter(advantages);
+    }
   }
 }
 
+
+.advantages__item--1 {
+  background-image: url("../img/index/index-leaf.svg");
+}
+
+.advantages__item--2 {
+  background-image: url("../img/index/index-tub.svg");
+}
+
+.advantages__item--3 {
+  background-image: url("../img/index/index-eat.svg");
+}
+
+.advantages__item--4 {
+  background-image: url("../img/index/index-time.svg");
+}
+
 .advantages__description {
-  margin: 0 20px 24px 80px;
+  margin: 0 0 24px 80px;
   padding: 0;
   font-family: @additional-font;
   font-weight: 400;

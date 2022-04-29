@@ -53,13 +53,35 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  text-align: start;
 
   @media (min-width: @tablet-width) {
+    text-align: end;
     .additional-titel-style();
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.contacts__address p {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 
 .contacts__map-frame {
+  border: none;
+  display: block;
+
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 400px;

@@ -13,6 +13,10 @@
   text-decoration: none;
   color: @text-additional-color;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: auto;
   }
@@ -20,6 +24,14 @@
 
 .copyright__icon {
   margin-left: auto;
+
+  &:hover {
+    fill: @button-main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: 22px;

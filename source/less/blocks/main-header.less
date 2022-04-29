@@ -1,31 +1,30 @@
 .main-header {
   display: flex;
-  margin: 0 auto;
-  width: 280px;
+  flex-wrap: wrap;
+  width: 320px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1440px;
   }
 }
 
 .main-header__logo-wrapper {
   display: flex;
   width: 190px;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 174px;
+    margin-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 202px;
+    margin-left: 110px;
   }
-}
-
-
-.main-header__main-nav {
-  margin-left: auto;
 }
