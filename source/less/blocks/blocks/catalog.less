@@ -1,7 +1,9 @@
 .catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     width: 708px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -9,19 +11,19 @@
   }
 }
 
-.catalog__titel {
+.catalog__title {
   margin: 0;
   padding: 27px 42px 41px 20px;
   font-family: @main-font;
   color: @text-contrast-color;
   border-top: @catalog-main-border;
   border-bottom: @catalog-main-border;
-  .main-titel-style ();
+  .main-title-style ();
 
   @media (min-width: @tablet-width) {
     padding: 65px 278px 82px 0;
     border: none;
-    .main-titel-style-tablet ();
+    .main-title-style-tablet ();
   }
 
   @media (min-width: @desktop-width) {

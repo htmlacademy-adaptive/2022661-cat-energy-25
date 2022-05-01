@@ -36,7 +36,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 32px;
-    .main-titel-style-tablet();
+    .main-title-style-tablet();
   }
 }
 
@@ -72,6 +72,22 @@
   z-index: 1;
   counter-increment: advantages;
 
+  &--1 {
+    background-image: url("../img/index/index-leaf.svg");
+  }
+
+  &--2 {
+    background-image: url("../img/index/index-tub.svg");
+  }
+
+  &--3 {
+    background-image: url("../img/index/index-eat.svg");
+  }
+
+  &--4 {
+    background-image: url("../img/index/index-time.svg");
+  }
+
   @media (min-width: @tablet-width) {
     padding: 150px 30px 56px 0;
     width: 250px;
@@ -94,23 +110,6 @@
       content: counter(advantages);
     }
   }
-}
-
-
-.advantages__item--1 {
-  background-image: url("../img/index/index-leaf.svg");
-}
-
-.advantages__item--2 {
-  background-image: url("../img/index/index-tub.svg");
-}
-
-.advantages__item--3 {
-  background-image: url("../img/index/index-eat.svg");
-}
-
-.advantages__item--4 {
-  background-image: url("../img/index/index-time.svg");
 }
 
 .advantages__description {
