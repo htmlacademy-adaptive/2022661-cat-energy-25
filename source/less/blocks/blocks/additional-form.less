@@ -1,24 +1,27 @@
-.additional-form {
-  padding-top: 8px;
+.additional-form__line {
+  margin-top: 22px;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 45px;
+    margin-top: 65px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 68px;
+    margin-top: 68px;
   }
 }
 
-.additional-form__title {
-  margin: 0 0 34px;
-  padding: 0;
-  font-family: @main-font;
-  .form-title-style ();
+.additional-form__form-wrapper {
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 56px;
-    .main-title-style();
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -30,13 +33,13 @@
 
 .additional-form__product-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 34px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 22px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,39 +48,51 @@
 }
 
 .additional-form__product-item {
-  &:last-child {
-    padding-bottom: 34px;
-  }
+  margin: 0;
 
   &:not(:last-child) {
-    padding-bottom: 12px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @tablet-width) {
-    width: 221px;
-    margin-right: 122px;
-    padding-bottom: 32px;
+    width: 220px;
+    margin-right: 0;
 
-    &:not(:last-child) {
-      padding-bottom: 32px;
+    &:nth-child(1) {
+      margin-bottom: 32px;
+      margin-right: 120px;
     }
 
-    &:nth-child(even) {
-      margin-right: 66px;
+    &:nth-child(2) {
+      margin-bottom: 32px;
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+      margin-right: 120px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 104px 0 0;
-    padding: 0;
-
-    &:last-child {
-      margin: 0;
-      padding: 0;
+    &:nth-child(1) {
+      margin-bottom: 0;
+      margin-right: 104px;
     }
 
-    &:not(:last-child) {
-      padding: 0;
+    &:nth-child(2) {
+      margin-bottom: 0;
+      margin-right: 104px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+      margin-right: 104px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+      margin-right: 0;
     }
   }
 }

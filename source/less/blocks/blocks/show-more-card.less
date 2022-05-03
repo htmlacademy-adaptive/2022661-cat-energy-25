@@ -4,6 +4,22 @@
   margin: 28px auto 22px;
   width: 280px;
   padding-top: 52px;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 124px;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 
   @media (min-width: @tablet-width) {
     margin: 81px 0 0;
@@ -11,10 +27,22 @@
     box-sizing: border-box;
     padding-top: 161px;
     width: 324px;
+
+    &::after,
+    &::before {
+      top: 80px;
+      left: 132px;
+      width: 60px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+
+    &::after,
+    &::before {
+      left: 92px;
+    }
   }
 }
 
