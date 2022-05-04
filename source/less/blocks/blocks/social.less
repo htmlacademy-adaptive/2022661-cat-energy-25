@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+}
+
+.social__list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 63px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__link {
+  &:hover {
+    fill: @button-main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

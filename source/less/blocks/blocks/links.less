@@ -1,0 +1,25 @@
+.links {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.links__shop-name {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 95px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.links__social {
+  border-top: @main-border;
+  border-bottom: @main-border;
+}

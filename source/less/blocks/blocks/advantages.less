@@ -1,0 +1,128 @@
+.advantages {
+  @media (min-width: @tablet-width) {
+    border-bottom: @nav-border;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
+}
+
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0;
+    margin-bottom: 26px;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 40px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @text-contrast-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+    .main-title-style-tablet();
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: advantages;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 36px;
+    column-gap: 134px;
+    width: 634px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 76px;
+    width: auto;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: 0;
+  margin: 0;
+  z-index: 1;
+  counter-increment: advantages;
+
+  &--1 {
+    background-image: url("../img/index/index-leaf.svg");
+  }
+
+  &--2 {
+    background-image: url("../img/index/index-tub.svg");
+  }
+
+  &--3 {
+    background-image: url("../img/index/index-eat.svg");
+  }
+
+  &--4 {
+    background-image: url("../img/index/index-time.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 150px 30px 56px 0;
+    width: 250px;
+    box-sizing: border-box;
+    background-size: 80px 80px;
+    background-position: 0 32px;
+
+    &::after {
+      position: absolute;
+      top: -10px;
+      left: 112px;
+      font-family: @main-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: @additional-color;
+      width: 112px;
+      height: 280px;
+      z-index: -1;
+      content: counter(advantages);
+    }
+  }
+}
+
+.advantages__description {
+  margin: 0 0 24px 80px;
+  padding: 0;
+  font-family: @additional-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
