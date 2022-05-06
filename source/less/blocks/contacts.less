@@ -82,6 +82,26 @@
   }
 }
 
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+  background-image: url("../img/footer/footer-map-mob.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/footer/footer-map-tablet.jpeg");
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/footer/footer-map-desktop.jpeg");
+  }
+}
+
 .contacts__map-frame {
   width: 100%;
   border: none;

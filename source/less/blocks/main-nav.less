@@ -22,12 +22,23 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-nav__list {
+  .main-nav--closed .site-list__item {
     display: none;
   }
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: flex;
+    min-width: 320px;
+    max-width: 767px;
   }
 }
 
@@ -62,7 +73,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  left: 276px;
+  right: 20px;
   z-index: 2;
   display: block;
   margin: 24px 0 25px;

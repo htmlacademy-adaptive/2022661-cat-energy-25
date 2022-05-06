@@ -1,6 +1,6 @@
 .main-header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -8,6 +8,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     width: 708px;
     padding: 0;
   }
@@ -20,7 +21,7 @@
 
 .main-header__logo {
   display: flex;
-  width: 190px;
+  width: 191px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
