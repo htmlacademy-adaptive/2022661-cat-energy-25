@@ -2,7 +2,23 @@
   position: relative;
 
   @media (min-width: @desktop-width) {
-    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -116px;
+      right: 0;
+      background-image: url("../img/index/index-main-cat-desktop.jpeg");
+      background-color: rgba(77, 152, 30, 0.85);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      width: 50%;
+      height: 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/index-main-cat-desktop@2x.jpeg");
+      }
+    }
   }
 }
 
@@ -16,6 +32,10 @@
   font-family: @main-font;
   color: @main-color;
   padding-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/index-main-cat-mob@2x.jpeg");
+  }
 
   &::before {
     position: absolute;
@@ -44,17 +64,6 @@
     width: 1250px;
     padding: 114px 0 54px 80px;
     box-sizing: border-box;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -116px;
-      right: -110px;
-      background-image: url("../img/index/index-main-cat-desktop.jpeg");
-      background-size: cover;
-      width: 720px;
-      height: 694px;
-    }
   }
 }
 

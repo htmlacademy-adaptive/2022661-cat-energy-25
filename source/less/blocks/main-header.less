@@ -7,10 +7,18 @@
   position: relative;
   box-sizing: border-box;
 
+  &--modificator {
+    border-bottom: @catalog-main-border;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     width: 708px;
     padding: 0;
+
+    &--modificator {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: @desktop-width) {

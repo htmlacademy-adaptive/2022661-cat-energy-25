@@ -62,7 +62,7 @@
 
 .additional__gift {
   display: block;
-  background-image: url("../img/catalog/catalog-additional-cat-gift-small.jpeg");
+  background-image: url("../img/catalog/catalog-bg-gift-mob.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: @button-main-color;
@@ -70,6 +70,10 @@
   padding: 186px 61px 42px 58px;
   box-sizing: border-box;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/catalog-bg-gift-mob@2x.jpeg");
+  }
 
   &::after {
     content: "";
@@ -82,9 +86,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/catalog/catalog-additional-cat-gift.jpeg");
+    background-image: url("../img/catalog/catalog-bg-gift-tablet.jpeg");
     height: 200px;
     padding: 70px 124px 70px 422px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/catalog-bg-gift-tablet@2x.jpeg");
+    }
 
     &::after {
       left: 78px;
@@ -92,13 +100,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/catalog/catalog-additional-cat-gift-small.jpeg");
+    background-image: url("../img/catalog/catalog-bg-gift-decktop.jpeg");
     position: absolute;
     top: 0;
     left: 975px;
     width: 245px;
     height: 289px;
     padding: 184px 43px 42px 41px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/catalog-bg-gift-decktop@2x.jpeg");
+    }
   }
 }
 
