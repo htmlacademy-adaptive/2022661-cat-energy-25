@@ -3,61 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>CAT ENERGY</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="main-header__wrapper main-header__wrapper--modificator">
         <div class="main-header__logo logo">
-          <a class="logo__icon" href="index.html">
-            <span class="visually-hidden">Логотип Сat Energy</span>
-            <svg width="34" height="38" viewBox="0 0 34 38" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 20.7v-2.2c6.8-1 13.5-1.4 20.2-1.4V19c1.9-.8 4-1.4 6-1.8a16.7 16.7 0 0 0-32 3.3l5.9.3ZM27.2 24.2c-1.1 1.3-1.3 1.2-1.3 3.5v9.2a16.6 16.6 0 0 0 7.1-17c-2 1.2-4 2.7-5.8 4.3ZM6.4 25.7 1.2 24 0 23.6a16.6 16.6 0 0 0 8.7 14L6.4 25.7Z" fill="#FDC305"/>
-              <path d="M26.3 17.1c0-5.5-.4-11-1.4-16.5 0 0-.1-1.2-.9-.2-.6 1.3-1 2.6-1.2 4-4.3-.3-8.5-.2-12.8.3C9.2 2 7.8.7 7.2 1c-.7.3-.7 3.3-.7 3.3L6 18.4c6.7-.9 13.4-1.3 20.2-1.3Z" fill="#F06351"/>
-              <path d="m12.4 14 1.4 1c.4.2.6.3.6.5s-.2.3-.6.3c-.4 0-1 0-1-.2H14L12.4 14ZM19.9 14.1l-1.1 1.3c0 .1-.2.4.2.3l1.2-.3-.1-.1h-1l.8-1.2s.1-.1 0 0ZM16.8 20.2c.4-.2.8-.6 1-1 .3-.6 0-1-.4-1-.6-.1-1.2 0-1.7.3-.4.4-.4.8 0 1l1 .7Z" fill="#000"/>
-              <path d="M16.4 21.4a2 2 0 0 1-.5.7c-.3.2-.6.3-1 .3-.5 0-1 0-1.5-.4l-.5-.4a1 1 0 0 0-.4-.3s.8 4.1 2.6 4.8c1.8.6 2.1-.8 2.2-1.2 0-1.1-.2-2.2-.8-3.2l-.1-.3Z" fill="#F06351"/>
-              <path d="M14.7 22.6a3.4 3.4 0 0 1-2.4-1.5.1.1 0 0 1 0-.1.1.1 0 0 1 .3 0c.5.7 1.2 1.1 2 1.3a2 2 0 0 0 1.7-1l.2-.2v.2s.4.8 1 .8c.7 0 1.1-.4 1.7-1.3a.1.1 0 0 1 .2 0 .2.2 0 0 1 0 .2c-.6 1-1.3 1.4-1.9 1.4a1.5 1.5 0 0 1-1-.8 2.3 2.3 0 0 1-1.8 1Z" fill="#000"/>
-              <path d="M26.2 19a58.6 58.6 0 0 0-5 5.1 31.6 31.6 0 0 1-5.3 4.9c-.2-.5-1.6-1.5-1.6-1.5S11 25.4 9 23.7l-3.1-3-2-.1c2.8 4.2 7 7.3 12 8.8.8-.2 3.2-1.9 5-3.3 2.1-1.8 4.1-3.8 6-5.9.5-.6.8-1.3 1.1-2l-1.9.7Z" fill="#F06351"/>
-            </svg>
+          <a class="logo__icon">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип Сat Energy" width="33px" height="38px">
+            </picture>
           </a>
-          <a class="logo__shop-name shop-name" href="index.html">
-            <svg width="101" height="18" viewBox="0 0 101 18" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.3 16.5A6.9 6.9 0 0 1 0 12.2V5.8a7 7 0 0 1 1.2-4.3C2 .5 3.4 0 5.4 0s3.2.5 4 1.3c.9 1 1.3 2.4 1.2 3.8v1.5H6.7V4.8c0-.5 0-1-.2-1.5L6 2.8l-.6-.1c-.6 0-1 .1-1.1.5C4 3.8 4 4.3 4 5v8.3l.3 1.6c.2.4.6.5 1.2.5.5 0 .8-.1 1-.5.2-.6.2-1.1.2-1.6v-1.9h3.9v1.5c0 1.4-.3 2.8-1.2 3.9-.8 1-2.1 1.4-4 1.4-2-.1-3.3-.6-4.1-1.6ZM15.3.2h4.5L23 17.8h-3.7l-.6-3.7h-2.6l-.6 3.7h-3.7L15.3.2Zm3.2 11.6-1-6.9-.9 6.9h1.9ZM25.8 3.2h-2.6v-3h9.4v2.9h-2.7v14.7h-4V3.2ZM39.8.2h7v1.9h-4.6v5.7h3.6v1.8h-3.6v6.5h4.5v1.7h-7V.2ZM48.8.2h1.7l5.1 11.6V.2h2v17.6h-1.5L51 5.8v12h-2.1V.2ZM60 .2h7v1.9h-4.5v5.7h3.6v1.8h-3.6v6.5H67v1.7h-7V.2ZM69 .2h3.7c1.4 0 2.9.3 4 1.1 1 .7 1.3 2 1.3 3.5 0 2.3-.7 3.7-2.2 4.1l2.5 8.8H76l-2.4-8.2h-2v8.2H69V.2Zm3.5 7.6c.9 0 1.7-.2 2.3-.6.5-.4.8-1.2.8-2.4 0-.5-.1-1.1-.3-1.6a2 2 0 0 0-.9-1C74 2 73.3 2 72.7 2h-1.1v5.8h1ZM81.2 16.5A7.6 7.6 0 0 1 80 12V6.2c0-1.2 0-2.3.4-3.4a4 4 0 0 1 1.5-2c.8-.5 1.9-.7 2.9-.6 1.6 0 2.8.3 3.5 1.2a5.8 5.8 0 0 1 1.1 3.8v.6h-2.3v-.5c0-.6 0-1.3-.2-2 0-.3-.3-.7-.6-1L84.9 2c-.6 0-1.1.1-1.6.5a1.7 1.7 0 0 0-.6 1.2 14 14 0 0 0-.2 2v6.6c0 1 .1 2 .5 3 .3.5 1 .8 1.9.8a2 2 0 0 0 1.9-1c.4-1 .6-2 .5-3v-1.3H85V9.1h4.6v8.7H88l-.2-2c-.2.6-.6 1.2-1.2 1.6-.6.4-1.3.6-2 .6a4 4 0 0 1-3.4-1.5ZM94.7 11.6 90.8.3h2.4l2.7 8.5L98.6.3h2.4l-3.9 11.3v6.2h-2.3v-6.2h-.1Z"/>
-            </svg>
-            <span class="visually-hidden">Сat Energy</span>
+          <a class="logo__shop-name shop-name">
+            <img src="img/logo-cat-energy.svg" alt="Сat Energy" width="101px" height="18px">
           </a>
         </div>
-        <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">главная</a>
-              </li>
-              <li class="site-list__item site-list__item--current">
-                <a class="site-list__link">каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="program.html">подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="index.html">главная</a>
+                </li>
+                <li class="site-list__item site-list__item--current">
+                  <a class="site-list__link">каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="program.html">подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
       </div>
     </header>
 
     <main class="main-container">
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h1 class="catalog__title">Каталог&nbsp;продукции</h1>
+          <div class="catalog__title-wrapper">
+            <h1 class="catalog__title">Каталог&nbsp;продукции</h1>
+          </div>
           <ul class="catalog__list">
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-500-chicken.svg" width="68" height="78" alt="Корм Cat Energy PRO 500 г. с курицей">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/chicken/chicken-500-tablet.png 1x, img/catalog/chicken/chicken-500-tablet@2x.png 2x">
+                    <img class="product-card__image product-card__image--500" src="img/catalog/chicken/chicken-500.png" srcset="img/catalog/chicken/chicken-500@2x.png 2x" alt="Корм Cat Energy PRO 500 г. с курицей">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 500 г</a>
@@ -79,7 +80,11 @@
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-1000-chicken.svg" width="84" height="100" alt="Корм Cat Energy PRO 1000 г. с курицей">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog/chicken/chicken-1000-decktop.png 1x, img/catalog/chicken/chicken-1000-decktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/chicken/chicken-1000-tablet.png 1x, img/catalog/chicken/chicken-1000-tablet@2x.png 2x">
+                    <img class="product-card__image" src="img/catalog/chicken/chicken-1000.png" srcset="img/catalog/chicken/chicken-1000@2x.png 2x" alt="Корм Cat Energy PRO 1000 г. с курицей">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 1000 г</a>
@@ -101,7 +106,10 @@
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-500-fish.svg" width="68" height="78" alt="Корм Cat Energy PRO 500 г. с рыбой">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/fish/fish-500-tablet.png 1x, img/catalog/fish/fish-500-tablet@2x.png 2x">
+                    <img class="product-card__image product-card__image--500" src="img/catalog/fish/fish-500.png" srcset="img/catalog/fish/fish-500@2x.png 2x" alt="Корм Cat Energy PRO 500 г. с рыбой">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 500 г</a>
@@ -123,7 +131,11 @@
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-1000-fish.svg" width="84" height="100" alt="Корм Cat Energy PRO 1000 г. с рыбой">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog/fish/fish-1000-decktop.png 1x, img/catalog/fish/fish-1000-decktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/fish/fish-1000-tablet.png 1x, img/catalog/fish/fish-1000-tablet@2x.png 2x">
+                    <img class="product-card__image" src="img/catalog/fish/fish-1000.png" srcset="img/catalog/fish/fish-1000@2x.png 2x" alt="Корм Cat Energy PRO 1000 г. с рыбой">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 1000 г</a>
@@ -145,7 +157,10 @@
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-500-buckwheat.svg" width="68" height="78" alt="Корм Cat Energy PRO 500 г. с гречкой">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/buckwheat/buckwheat-500-tablet.png 1x, img/catalog/buckwheat/buckwheat-500-tablet@2x.png 2x">
+                    <img class="product-card__image product-card__image--500" src="img/catalog/buckwheat/buckwheat-500.png" srcset="img/catalog/buckwheat/buckwheat-500@2x.png 2x" alt="Корм Cat Energy PRO 500 г. с гречкой">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 500 г</a>
@@ -167,7 +182,11 @@
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-1000-buckwheat.svg" width="84" height="100" alt="Корм Cat Energy PRO 1000 г. с гречкой">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog/buckwheat/buckwheat-1000-decktop.png 1x, img/catalog/buckwheat/buckwheat-1000-decktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/buckwheat/buckwheat-1000-tablet.png 1x, img/catalog/buckwheat/buckwheat-1000-tablet@2x.png 2x">
+                    <img class="product-card__image" src="img/catalog/buckwheat/buckwheat-1000.png" srcset="img/catalog/buckwheat/buckwheat-1000@2x.png 2x" alt="Корм Cat Energy PRO 1000 г. с гречкой">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 1000 г</a>
@@ -189,7 +208,10 @@
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
-                  <img class="product-card__image" src="img/catalog/catalog-Energy-PRO-500-rice.svg" width="68" height="78" alt="Корм Cat Energy PRO 500 г. с рисом">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/rice/rice-500-tablet.png 1x, img/catalog/rice/rice-500-tablet@2x.png 2x">
+                    <img class="product-card__image product-card__image--500" src="img/catalog/rice/rice-500.png" srcset="img/catalog/rice/rice-500@2x.png 2x" alt="Корм Cat Energy PRO 500 г. с рисом">
+                  </picture>
                 </a>
                 <h3 class="product-card__title">
                   <a class="product-card__title-link">Cat Energy PRO 500 г</a>
@@ -220,8 +242,12 @@
       </section>
 
       <section class="additional">
+        <div class="additional__header line">
+          <div class="line__wrapper">
+            <h2 class="additional__title line__title">Дополнительные товары</h2>
+          </div>
+        </div>
         <div class="additional__wrapper">
-          <h2 class="additional__title">Дополнительные товары</h2>
           <ul class="additional__list">
             <li class="additional__item additional-product-card">
                 <h3 class="additional-product-card__title">Сахарозаменитель</h3>
@@ -261,8 +287,8 @@
           <div class="contacts__wrapper">
             <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург</address>
+              Конюшенная,&nbsp;д.&nbsp;19/8
+              <p>Санкт-Петербург</p></address>
           </div>
           <div class="contacts__map">
             <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.3875829897056!2d30.322748102442937!3d59.938602132292964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648997564893!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
