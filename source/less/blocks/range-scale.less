@@ -1,20 +1,29 @@
 .range-scale {
+  margin: 0 auto;
+  width: 210px;
+  padding-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
   color: @text-contrast-color;
-  position: relative;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: 592px;
+    padding-bottom: 65px;
+  }
 }
 
 .range-scale__description {
   text-align: center;
   text-transform: uppercase;
   color: @text-contrast-color;
-  padding: 0;
+  padding: 5px;
   .additional-title-style ();
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px dotted #cdcdcd;
-    padding: 4px 0 6px;
+    padding: 5px 0;
+    margin: 0 10px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -29,10 +38,14 @@
   }
 }
 
+.range-scale__range-bar {
+  position: relative;
+}
+
 .range-scale__scale {
   width: 86px;
   height: 14px;
-  margin: 0 13px;
+  margin: 8px 13px;
   appearance: none;
   border: @catalog-additional-border;
   box-sizing: border-box;
@@ -41,6 +54,7 @@
   @media (min-width: @tablet-width) {
     width: 426px;
     height: 6px;
+    margin: 17px 13px;
     border: none;
   }
 }
@@ -68,8 +82,8 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
-    top: 3px;
-    left: 355px;
+    top: 0;
+    left: 213px;
     width: 34px;
     height: 34px;
     background-color: @main-color;
@@ -96,9 +110,5 @@
       height: 8px;
       width: 8px;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    left: 285px;
   }
 }

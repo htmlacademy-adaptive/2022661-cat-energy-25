@@ -13,7 +13,7 @@
       background-size: contain;
       background-position: right;
       width: 50%;
-      height: 694px;
+      min-height: 694px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index/index-main-cat-desktop@2x.jpeg");
@@ -97,7 +97,7 @@
     font-size: 20px;
     line-height: 20px;
     color: @text-contrast-color;
-    margin: 0 300px 20px 88px;
+    margin: 0 300px 50px 88px;
   }
 
   @media (min-width: @desktop-width) {
@@ -111,9 +111,12 @@
   margin: 0 20px 3px;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
     margin: 0;
     width: 709px;
     height: 609px;
+    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -130,10 +133,7 @@
   margin: 0 20px 20px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    z-index: 1;
-    margin: 0 0 0 90px;
-    top: 292px;
+    margin: 0 0 526px 90px;
   }
 
   @media (min-width: @desktop-width) {
