@@ -39,11 +39,11 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 54px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -58,40 +58,27 @@
     width: 220px;
     margin-right: 0;
 
-    &:nth-child(1) {
+    &:nth-child(odd) {
       margin-bottom: 32px;
       margin-right: 120px;
     }
 
-    &:nth-child(2) {
+    &:nth-child(even) {
       margin-bottom: 32px;
       margin-right: 0;
-    }
-
-    &:nth-child(3) {
-      margin-bottom: 0;
-      margin-right: 120px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    &:nth-child(1) {
-      margin-bottom: 0;
+    &:nth-child(odd) {
       margin-right: 104px;
     }
 
-    &:nth-child(2) {
-      margin-bottom: 0;
-      margin-right: 104px;
-    }
-
-    &:nth-child(3) {
-      margin-bottom: 0;
+    &:nth-child(even) {
       margin-right: 104px;
     }
 
     &:nth-child(4) {
-      margin-bottom: 0;
       margin-right: 0;
     }
   }
