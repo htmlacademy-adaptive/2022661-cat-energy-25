@@ -13,7 +13,7 @@
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-top: 26px;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 42px 30px 146px 0;
+    margin: 44px 30px 146px 0;
   }
 }
 
@@ -57,10 +57,12 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 54px;
+    padding-right: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 193px 70px 0;
+    margin: 0 193px 68px 0;
+    padding-right: 0;
   }
 }
 
@@ -86,7 +88,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 60px;
+    margin: 0 0 58px;
   }
 }
 
@@ -106,7 +108,7 @@
   @media (min-width: @tablet-width) {
     min-width: 162px;
     min-height: 72px;
-    padding: 15px 20px 20px;
+    padding: 14px 20px 20px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -114,7 +116,7 @@
   &--loss::before {
     position: absolute;
     content: "снижение веса";
-    bottom: -10px;
+    bottom: -14px;
     left: 20px;
     width: 82px;
     font-family: @additional-font;
@@ -143,7 +145,7 @@
   &--time::before {
     position: absolute;
     content: "затрачено времени";
-    bottom: -10px;
+    bottom: -14px;
     left: 20px;
     width: 82px;
     font-family: @additional-font;
@@ -183,7 +185,7 @@
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    padding: 10px 0 20px;
+    padding: 12px 0 10px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -199,6 +201,7 @@
 .example__expenses-number {
   @media (min-width: @tablet-width) {
     margin-left: auto;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -214,6 +217,7 @@
     width: 590px;
     height: 511px;
     margin: 0 auto;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {

@@ -2,18 +2,18 @@
   display: grid;
   grid-template-columns: min-content min-content;
   grid-template-rows: repeat(3, min-content);
-  padding: 12px 0 20px 0;
+  padding: 12px 0 18px 0;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 407px 132px 93px;
     grid-template-rows: min-content min-content;
-    padding: 26px 38px 28px;
+    padding: 22px 38px 30px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 324px 132px 156px 282px;
     grid-template-rows: min-content;
-    padding: 15px 0 17px;
+    padding: 13px 0 17px;
   }
 }
 
@@ -34,7 +34,7 @@
     grid-row: 1 / 2;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 25px;
+    margin: 0 0 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,7 +47,7 @@
 .additional-product-card__name {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   padding: 0;
   font-family: @additional-font;
   font-weight: 400;
@@ -57,7 +57,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    margin: 0 0 25px;
+    text-align: end;
     .additional-title-style();
   }
 
@@ -71,7 +71,7 @@
 .additional-product-card__name-price {
   grid-column: 2 / -1;
   grid-row: 2 / 3;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   padding: 0;
   font-family: @additional-font;
   font-weight: 400;
@@ -83,7 +83,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 3 / -1;
     grid-row: 1 / 2;
-    margin: 0 0 25px;
+    margin: 0 0 26px;
   }
 
   @media (min-width: @desktop-width) {

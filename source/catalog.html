@@ -16,12 +16,13 @@
         <div class="main-header__logo logo">
           <a class="logo__icon" href="index.html">
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/content/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
               <img src="img/content/logo-mobile.svg" alt="Логотип Сat Energy" width="33" height="38">
             </picture>
           </a>
           <a class="logo__shop-name shop-name" href="index.html">
-            <img src="img/content/logo-cat-energy.svg" alt="Сat Energy" width="101" height="18">
+            <img class="shop-name_image" src="img/content/logo-cat-energy.svg" alt="Сat Energy" width="101" height="18">
           </a>
         </div>
         <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
@@ -51,7 +52,10 @@
           <div class="catalog__title-wrapper">
             <h1 class="catalog__title">Каталог&nbsp;продукции</h1>
           </div>
-          <ul class="catalog__list">
+          <a id="pro">
+            <span class="visually-hidden">Каталог PRO</span>
+          </a>
+          <ul class="catalog__list catalog__list--pro">
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
@@ -154,6 +158,11 @@
                 <a class="product-card__button button button--catalog">заказать</a>
               </div>
             </li>
+          </ul>
+            <a id="slim">
+              <span class="visually-hidden">Каталог Slim</span>
+            </a>
+          <ul class="catalog__list">
             <li class="catalog__item product-card">
               <div class="product-card__wrapper">
                 <a class="product-card__image-link">
@@ -163,7 +172,7 @@
                   </picture>
                 </a>
                 <h3 class="product-card__title">
-                  <a class="product-card__title-link">Cat Energy PRO 500 г</a>
+                  <a class="product-card__title-link">Cat Energy SLIM 500 г</a>
                 </h3>
                 <ul class="product-card__table table">
                   <li class="table__term">Масса
@@ -173,7 +182,7 @@
                     <span class="table__description">Гречка</span>
                   </li>
                   <li class="table__term">Цена
-                    <span class="table__description">700 Р.</span>
+                    <span class="table__description">400 Р.</span>
                   </li>
                 </ul>
                 <a class="product-card__button button button--catalog">заказать</a>
@@ -189,7 +198,7 @@
                   </picture>
                 </a>
                 <h3 class="product-card__title">
-                  <a class="product-card__title-link">Cat Energy PRO 1000 г</a>
+                  <a class="product-card__title-link">Cat Energy SLIM 1000 г</a>
                 </h3>
                 <ul class="product-card__table table">
                   <li class="table__term">Масса
@@ -199,7 +208,7 @@
                     <span class="table__description">Гречка</span>
                   </li>
                   <li class="table__term">Цена
-                    <span class="table__description">1000 Р.</span>
+                    <span class="table__description">700 Р.</span>
                   </li>
                 </ul>
                 <a class="product-card__button button button--catalog">заказать</a>
@@ -214,7 +223,7 @@
                   </picture>
                 </a>
                 <h3 class="product-card__title">
-                  <a class="product-card__title-link">Cat Energy PRO 500 г</a>
+                  <a class="product-card__title-link">Cat Energy SLIM 500 г</a>
                 </h3>
                 <ul class="product-card__table table">
                   <li class="table__term">Масса
@@ -224,7 +233,7 @@
                     <span class="table__description">Рис</span>
                   </li>
                   <li class="table__term">Цена
-                    <span class="table__description">700 Р.</span>
+                    <span class="table__description">500 Р.</span>
                   </li>
                 </ul>
                 <a class="product-card__button button button--catalog">заказать</a>
@@ -275,7 +284,7 @@
             </li>
           </ul>
           <div class="additional__gift">
-            <p class="additional__gift-description">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="additional__gift-description">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -285,7 +294,7 @@
       <div class="main-footer__wrapper">
         <section class="main-footer__contacts contacts contacts--modified">
           <div class="contacts__wrapper">
-            <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая
               Конюшенная,&nbsp;д.&nbsp;19/8
               <p>Санкт-Петербург</p></address>
@@ -297,7 +306,7 @@
         <section class="main-footer__links">
           <div class="main-footer__links-wrapper links">
             <a class="links__shop-name shop-name shop-name--footer" href="index.html">
-              <img src="img/content/logo-cat-energy.svg" alt="Сat Energy" width="101" height="18">
+              <img class="shop-name_image shop-name_image--footer" src="img/content/logo-cat-energy.svg" alt="Сat Energy" width="101" height="18">
             </a>
             <div class="links__social social">
               <h2 class="visually-hidden">Социальные сети</h2>

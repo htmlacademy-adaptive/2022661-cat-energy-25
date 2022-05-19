@@ -1,5 +1,10 @@
 .main-block {
   position: relative;
+  margin-top: -4px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: @desktop-width) {
     &::after {
@@ -62,7 +67,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1250px;
-    padding: 114px 0 54px 80px;
+    padding: 105px 0 54px 95px;
     box-sizing: border-box;
   }
 }
@@ -108,7 +113,7 @@
 .main-block__product-image {
   display: block;
   position: relative;
-  margin: 0 20px 3px;
+  margin: 0 20px 1px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -121,8 +126,8 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    left: 448px;
-    top: 32px;
+    left: 462px;
+    top: 24px;
     width: 552px;
     height: 499px;
     z-index: 1;
@@ -131,9 +136,11 @@
 
 .main-block__button {
   margin: 0 20px 20px;
+  min-height: 40px;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 526px 90px;
+    min-height: 54px;
   }
 
   @media (min-width: @desktop-width) {

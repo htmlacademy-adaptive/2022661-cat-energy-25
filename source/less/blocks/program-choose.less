@@ -1,17 +1,25 @@
+.program-choose {
+  margin: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
 .program-choose__wrapper {
   margin: 0 auto;
   width: 280px;
-  padding-top: 27px;
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     position: relative;
     width: 708px;
-    padding-top: 64px;
+    padding-top: 62px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding-top: 74px;
+    padding-top: 72px;
   }
 }
 
@@ -27,12 +35,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 56px;
+    margin: 0 0 54px;
   }
 }
 
 .program-choose__description {
-  margin: 0 54px 40px 0;
+  margin: 0 54px 38px 0;
   padding: 0;
   font-family: @main-font;
   font-style: normal;
@@ -96,7 +104,7 @@
   border-top: @main-border;
   border-bottom: @main-border;
   margin: 0;
-  padding: 28px 0 26px;
+  padding: 26px 0;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -116,7 +124,7 @@
   @media (min-width: @tablet-width) {
     border: @form-border;
     margin: 0;
-    padding: 25px 28px;
+    padding: 28px 28px;
     box-sizing: border-box;
   }
 
@@ -149,9 +157,12 @@
 
 .program-choose__button {
   margin-bottom: 20px;
+  .additional-title-style;
 
   @media (min-width: @tablet-width) {
-    margin: 0 60px 72px 0;
+    margin: 0 64px 72px 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -167,11 +178,12 @@
   line-height: 16px;
   text-align: center;
   color: @text-contrast-color;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     padding-top: 16px;
     margin-bottom: 92px;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {

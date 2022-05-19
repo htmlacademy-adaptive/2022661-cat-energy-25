@@ -10,13 +10,27 @@
   margin: 0 auto;
   padding: 0;
   min-height: 63px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .social__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+  }
 }
 
 .social__link {
+  fill: @icon-color;
+
   &:hover {
     fill: @button-main-color;
   }
