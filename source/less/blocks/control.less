@@ -5,10 +5,6 @@
   padding-left: 45px;
   cursor: pointer;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: @tablet-width) {
     padding-left: 60px;
   }
@@ -80,6 +76,18 @@
   border: 1px solid #bababa;
 }
 
+.control__input[type="radio"]:disabled + .control__mark {
+  opacity: 0.3;
+}
+
+.control__input[type="radio"]:disabled ~ .control__label {
+  opacity: 0.3;
+}
+
+.control__input[type="radio"]:checked:disabled ~ .control__label {
+  opacity: 0.3;
+}
+
 .control__input[type="checkbox"]:checked + .control__mark-ckeckbox::after {
   content: "";
   background-image: url("../img/content/program-form-arrow.svg");
@@ -100,4 +108,16 @@
 
 .control__input[type="checkbox"]:hover + .control__mark-ckeckbox {
   border: 1px solid #bababa;
+}
+
+.control__input[type="checkbox"]:disabled + .control__mark-ckeckbox {
+  opacity: 0.3;
+}
+
+.control__input[type="checkbox"]:disabled ~ .control__label {
+  opacity: 0.3;
+}
+
+.control__input[type="checkbox"]:checked:disabled ~ .control__label {
+  opacity: 0.3;
 }
