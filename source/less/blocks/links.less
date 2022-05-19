@@ -14,6 +14,10 @@
   align-items: center;
   min-height: 95px;
 
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0;
   }
@@ -22,4 +26,8 @@
 .links__social {
   border-top: @main-border;
   border-bottom: @main-border;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

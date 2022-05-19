@@ -1,8 +1,12 @@
 .copyright {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  min-height: 78px;
+  padding: 18px 0 22px;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .copyright__link {
@@ -12,18 +16,21 @@
   line-height: 18px;
   text-decoration: none;
   color: @text-additional-color;
+  padding-top: 8px;
 
   &:active {
     opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     margin-left: auto;
   }
 }
 
 .copyright__icon {
   margin-left: auto;
+  fill: @icon-color;
 
   &:hover {
     fill: @button-main-color;

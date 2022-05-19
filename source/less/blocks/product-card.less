@@ -38,6 +38,7 @@
   display: flex;
   object-fit: contain;
   margin: 14px auto 12px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 168px;
@@ -54,12 +55,12 @@
   @media (min-width: @desktop-width) {
     width: 172px;
     height: 196px;
-    margin: 1px 34px 40px 39px;
+    margin: 1px 34px 42px 39px;
 
     &--500 {
       width: 161px;
       height: 172px;
-      margin: 29px 42px 42px;
+      margin: 29px 42px 40px;
     }
   }
 }
@@ -69,19 +70,20 @@
   grid-row: -4 / -3;
   margin: 0;
   padding-right: 66px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
   font-family: @main-font;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: @special-color;
+  cursor: pointer;
   .additional-title-style ();
 
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     margin: 0 72px 14px 78px;
-    padding: 0 10px;
+    padding: 0 15px 0 10px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -89,6 +91,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 45px 16px 55px;
+    padding: 0;
   }
 }
 
