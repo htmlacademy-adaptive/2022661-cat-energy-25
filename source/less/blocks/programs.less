@@ -133,18 +133,9 @@
   color: @text-contrast-color;
   cursor: pointer;
   border-top: @main-border;
-  background-image: url("../img/content/index-program-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 12px;
-  background-position: 100px 20px;
 
   &:active {
     opacity: 0.3;
-  }
-
-  &:hover {
-    background-image: url("../img/content/index-program-arrow-big.svg");
-    background-size: 32px 12px;
   }
 
   @media (min-width: @tablet-width) {
@@ -154,4 +145,31 @@
     line-height: 30px;
     background-position: 133px 13px;
   }
+}
+
+
+.programs__line {
+  margin-left: 13px;
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24px;
+  }
+}
+
+.programs__arrow {
+  margin-left: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+  }
+}
+
+.programs__to-program:hover .programs__line {
+  width: 24px;
 }

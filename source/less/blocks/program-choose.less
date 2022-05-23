@@ -99,16 +99,26 @@
   }
 }
 
-.program-choose__filter-group {
-  border: none;
+.program-choose__filter-wrapper {
+  display: flex;
   border-top: @main-border;
   border-bottom: @main-border;
-  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.program-choose__filter-group {
+  border: none;
+  margin: 0 auto;
   padding: 26px 0;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0;
+    width: 628px;
   }
 
   @media (min-width: @desktop-width) {
